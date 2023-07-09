@@ -23,3 +23,12 @@ console.log(addToCollection("Anything in Return", "Toro y Moi", 2013));
 console.log(addToCollection("Love Deluxe", "Sade", 1992));
 
 console.log(collection);
+
+function showCollection(albums) {
+    console.log('Number of albums:', albums.length);
+    for (const album of albums) {
+      console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}`);
+    }
+  }
+
+showCollection(collection);

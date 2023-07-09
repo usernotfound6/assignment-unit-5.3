@@ -32,3 +32,19 @@ function showCollection(albums) {
   }
 
 showCollection(collection);
+
+function findByArtist(artist) {
+    const results = [];
+  
+    for (const album of collection) {
+      if (album.artist === artist) {
+        results.push(album);
+      }
+    }
+  
+    return results;
+  }
+  
+console.log(findByArtist("Frank Ocean"));
+console.log(findByArtist("Sade"));
+console.log(findByArtist("Kendrick Lamar"));
